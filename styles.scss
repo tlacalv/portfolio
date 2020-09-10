@@ -1,0 +1,14 @@
+@import "node_modules/bootstrap/scss/bootstrap.scss";
+
+.nav-link-animation {
+    transition: .5s;
+}
+.nav-link-animation:hover {
+    transform: scale(1.2) translateY(-5px);
+}
+
+@media screen and (max-width: 768px) {
+    .nav-link-animation:hover{
+        transform: translateX(10px);
+    }
+}
