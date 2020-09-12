@@ -6,7 +6,13 @@
 .nav-link-animation:hover {
     transform: scale(1.2) translateY(-5px);
 }
-
+.cont-image-project {
+    padding-left: 0;
+    padding-right: 0;
+}
+#nav {
+    transition: .5s;
+}
 @media screen and (max-width: 768px) {
     .nav-link-animation:hover{
         transform: translateX(10px);

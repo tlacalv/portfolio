@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="icons.css">
 </head>
 <body>
-    <nav class="navbar navbar-expand-md navbar-light  flex-md-column flex-sm-row">
+    <nav id="nav" class="navbar navbar-expand-md navbar-light  flex-md-column flex-sm-row">
         <a class="navbar-brand m-auto" href="#">Tlacaelel</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -117,6 +117,41 @@
 
       </div>
     </div>
+    <hr>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col">
+          <h1 class="text-center">Porjects</h1>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-7 col-lg-7 col-xl-6 cont-image-project">
+          <img class="img-fluid" src="dummy.png" alt="desc">
+        </div>
+        <div class="col-md-5">
+          <h2>PDF Covering</h2>
+          <p>Its a small application that loads a PDF and renders it in the DOM, making it possible to draw black rectangles in it, this functionality was made to cover personal information in government documents, and to fulfill the federal law of transparency without exposing personal information. It was integrated with a bigger project that manages this flow.</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-7 col-lg-7 col-xl-6 cont-image-project">
+          <img class="img-fluid" src="dummy.png" alt="desc">
+        </div>
+        <div class="col-md-5">
+          <h2>Currency converter</h2>
+          <p>A small app created purely with Vue it consumes a currency API and gets the value of the most important currencies. It was designed in an intuitive manner of use, unlike other small apps that make the same.</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-7 col-lg-7 col-xl-6 cont-image-project">
+          <img class="img-fluid" src="dummy.png" alt="desc">
+        </div>
+        <div class="col-md-5">
+          <h2>Platzi video</h2>
+          <p>Its a project developed for learning React.js and implementing a full-stack flow, I built the API with Expres.js, and the front end with react, then implemented SSR to serve the React.js from the server.</p>
+        </div>
+      </div>
+    </div>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
@@ -124,6 +159,14 @@
       $(function () {
         $('[data-toggle="popover"]').popover()
       })
+      let nav = document.getElementById('nav')
+      window.onscroll= (e) => {
+        if(window.pageYOffset > nav.offsetTop) {
+          nav.classList.add("sticky")
+        } else {
+          nav.classList.remove("sticky")
+        }
+      } 
     </script>
   </body>
 </html>
