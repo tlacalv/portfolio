@@ -1,7 +1,7 @@
 $primary: #e34f99;
 @import "../node_modules/bootstrap/scss/bootstrap.scss";
 .nav-link-animation {
-    transition: .5s;
+    transition: .7s;
 }
 .nav-link-animation:hover {
     transform: scale(1.2) translateY(-5px);
@@ -19,7 +19,7 @@ body {
 }
 #nav {
     transition: .5s;
-    position: fixed;
+    position: absolute;
     top: 0;
     left: 0;
     right: 0;
@@ -32,12 +32,12 @@ body {
 }
 .sticky {
     color: white;
+    position: fixed !important;
     background: $gray-800;
     top: 0;
     left: 50px;
     z-index: 2;
     right: 50px;
-    padding: 0;
 }
 .sticky-link {
     padding-top: 0;

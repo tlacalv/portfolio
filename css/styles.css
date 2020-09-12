@@ -9894,7 +9894,7 @@ h3 {
   }
 }
 .nav-link-animation {
-  transition: 0.5s;
+  transition: 0.7s;
 }
 
 .nav-link-animation:hover {
@@ -9917,7 +9917,7 @@ body {
 
 #nav {
   transition: 0.5s;
-  position: fixed;
+  position: absolute;
   top: 0;
   left: 0;
   right: 0;
@@ -9932,12 +9932,12 @@ body {
 
 .sticky {
   color: white;
+  position: fixed !important;
   background: #343a40;
   top: 0;
   left: 50px;
   z-index: 2;
   right: 50px;
-  padding: 0;
 }
 
 .sticky-link {

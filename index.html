@@ -8,7 +8,8 @@
     <link rel="stylesheet" href="css/icons.css">
 </head>
 <body>
-    <nav id="nav" class="navbar navbar-expand-md navbar-dark  flex-md-column flex-sm-row">
+    <nav id="nav" class="navbar navbar-expand-md navbar-dark ">
+      <div class="container flex-md-column flex-sm-row">
         <a class="navbar-brand m-auto text-primary" href="/">Tlacaelel</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -20,6 +21,8 @@
             <a class="nav-link nav-link-animation" href="#">Projects</a>
           </div>
         </div>
+
+      </div>
     </nav>
     <div class="jumbotron  jumbotron-dark jumbotron-fluid hero">
       <div class="container">
@@ -167,20 +170,26 @@
       })
       let nav = document.getElementById('nav')
       let navLinks = document.getElementsByClassName('nav-link');
+      let container = nav.children[0];
       console.log(navLinks);
       
       window.onscroll= (e) => {
-        if(window.pageYOffset > nav.offsetTop) {
-          nav.classList.add("sticky")
-          for(let i=0; i<navLinks.length; i++) {
-            navLinks[i].classList.add('sticky-link');
+        setTimeout(() => {
+          
+          if(window.pageYOffset > nav.offsetTop) {
+            nav.classList.add("sticky")
+            container.classList.remove("flex-md-column")
+            for(let i=0; i<navLinks.length; i++) {
+              navLinks[i].classList.add('sticky-link');
+            }
+          } else {
+            nav.classList.remove("sticky")
+            container.classList.add("flex-md-column")
+            for(let i=0; i<navLinks.length; i++) {
+              navLinks[i].classList.remove('sticky-link');
+            }
           }
-        } else {
-          nav.classList.remove("sticky")
-          for(let i=0; i<navLinks.length; i++) {
-            navLinks[i].classList.remove('sticky-link');
-          }
-        }
+        }, 300);
       } 
     </script>
   </body>
