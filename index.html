@@ -160,11 +160,20 @@
         $('[data-toggle="popover"]').popover()
       })
       let nav = document.getElementById('nav')
+      let navLinks = document.getElementsByClassName('nav-link');
+      console.log(navLinks);
+      
       window.onscroll= (e) => {
         if(window.pageYOffset > nav.offsetTop) {
           nav.classList.add("sticky")
+          for(let i=0; i<navLinks.length; i++) {
+            navLinks[i].classList.add('sticky-link');
+          }
         } else {
           nav.classList.remove("sticky")
+          for(let i=0; i<navLinks.length; i++) {
+            navLinks[i].classList.remove('sticky-link');
+          }
         }
       } 
     </script>

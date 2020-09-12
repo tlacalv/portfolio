@@ -9910,6 +9910,26 @@ h3 {
   transition: 0.5s;
 }
 
+.sticky {
+  color: white;
+  background: #17a2b8;
+  position: fixed;
+  top: 0;
+  left: 50px;
+  z-index: 2;
+  right: 50px;
+  padding: 0;
+}
+
+.sticky-link {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.sticky + .container {
+  padding-top: 80px;
+}
+
 @media screen and (max-width: 768px) {
   .nav-link-animation:hover {
     transform: translateX(10px);
