@@ -1,10 +1,17 @@
-@import "node_modules/bootstrap/scss/bootstrap.scss";
-
+$primary: #e34f99;
+@import "../node_modules/bootstrap/scss/bootstrap.scss";
 .nav-link-animation {
     transition: .5s;
 }
 .nav-link-animation:hover {
     transform: scale(1.2) translateY(-5px);
+}
+.navbar-dark .navbar-nav .nav-link {
+    color: $gray-200;
+}
+body {
+    background: $gray-900;
+    color: white;
 }
 .cont-image-project {
     padding-left: 0;
@@ -12,11 +19,20 @@
 }
 #nav {
     transition: .5s;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+.hero {
+    padding-top: 160px;
+    background-image: url('../images/hero-bg-blur.jpg');
+    background-size: cover;
+    background-position: center;
 }
 .sticky {
     color: white;
-    background: $cyan;
-    position: fixed;
+    background: $gray-800;
     top: 0;
     left: 50px;
     z-index: 2;
