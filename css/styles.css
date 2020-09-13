@@ -9974,6 +9974,29 @@ h3 {
   margin-right: 5px;
 }
 
+.portrait-container .portrait {
+  border-radius: 50%;
+}
+
+.contact-btn .btn {
+  padding: 1em;
+}
+.contact-btn [class^=icon-], .contact-btn [class*=" icon-"] {
+  font-size: 2.5em;
+}
+
+.bs-popover-right > .arrow::after, .bs-popover-auto[x-placement^=right] > .arrow::after {
+  border-right-color: #212529;
+}
+
+.popover {
+  background: #212529;
+}
+.popover .popover-header {
+  background: #212529;
+  border-color: #343a40;
+}
+
 @media screen and (max-width: 768px) {
   .nav-link-animation:hover {
     transform: translateX(10px);

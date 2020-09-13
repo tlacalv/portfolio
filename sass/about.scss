@@ -1,0 +1,25 @@
+.portrait-container {
+    .portrait {
+        border-radius: 50%;
+    }
+}
+.contact-btn {
+    .btn {
+        padding: 1em;
+    }
+    [class^="icon-"], [class*=" icon-"] {
+        font-size: 2.5em;
+    }
+}
+.bs-popover-right > .arrow::after, .bs-popover-auto[x-placement^="right"] > .arrow::after {
+	border-right-color: $gray-900;
+}
+
+.popover {
+    background: $gray-900;
+    .popover-header {
+        background: $gray-900;
+        border-color: $gray-800;
+        
+    }
+}

@@ -43,30 +43,29 @@
     
     <div class="container">
         <div class="row">
-          <div class="col">
-            <h2>Hi, my name is Tlacaelel Leon Villaseñor, I’m a web developer</h2>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-md-8">
+          <div class="col-md-8 d-flex justify-content-center flex-column">
+            <h2 class="text-primary">Hi, my name is Tlacaelel Leon Villaseñor, I’m a web developer</h2>
             <p>Focused in web development, I know both front-end and back-end, I specialize in JavaScript with several frameworks. I have thrive for constant learning and I love making things from scratch, together we can build something powerful and exciting.</p>
           </div>
-          <div class="col-md-3">
-            <img src="portrait.jpg" class="card-img-top card-img-bottom" alt="portrait">
+          <div class="col-md-4">
+            <div class="portrait-container">
+              <img src="images/portrait.jpg" class="img-fluid portrait" alt="portrait">
+
+            </div>
           </div>
         </div>
         <hr>
         <div class="row">
           <div class="col">
-            <h2>Contact me</h2>
+            <h3 class="text-center">Contact me</h3>
           </div>
         </div>
         <div class="row justify-content-center">
           <div class="col-md-4 d-flex justify-content-center">
-            <div class="btn-group" role="group" aria-label="Basic example">
-              <a href="https://github.com/tlacalv" class="btn btn-primary "><span class="icon-github"></span></a>
-              <a href="https://www.linkedin.com/in/tlaca/" class="btn btn-primary"><span class="icon-linkedin"></span></a>
-              <button  class="btn btn-primary" data-toggle="popover" title="radeon777@live.com"><span class="icon-envelope"></span></button>
+            <div class="btn-group contact-btn" role="group" aria-label="Basic example">
+              <a href="https://github.com/tlacalv" class="btn btn-primary " data-toggle="tooltip" title="Github" data-placement="bottom"><span class="icon-github"></span></a>
+              <a href="https://www.linkedin.com/in/tlaca/" class="btn btn-primary"  data-toggle="tooltip" title="LinkedIn" data-placement="bottom"><span class="icon-linkedin"></span></a>
+              <button  class="btn btn-primary" data-toggle="popover" title="radeon777@live.com" ><span class="icon-envelope"></span></button>
             </div>
           </div>
         </div>
@@ -177,6 +176,7 @@
     <script>
       $(function () {
         $('[data-toggle="popover"]').popover()
+        $('[data-toggle="tooltip"]').tooltip()
       })
       let nav = document.getElementById('nav')
       let navLinks = document.getElementsByClassName('nav-link');
