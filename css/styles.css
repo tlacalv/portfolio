@@ -9997,6 +9997,32 @@ h3 {
   border-color: #343a40;
 }
 
+.card {
+  border-radius: 0;
+  border: 1px solid #495057;
+  height: 100%;
+}
+
+.card-bg-dark {
+  background: #222;
+}
+
+.skills [class^=col], .skills [class*=" col"] {
+  margin-bottom: 2em;
+}
+
+.back-bg-dark {
+  background: #112130;
+}
+
+.back-bg-light {
+  background: #d2ffeb;
+}
+
+.react-bg-light {
+  background: #d4e6eb;
+}
+
 @media screen and (max-width: 768px) {
   .nav-link-animation:hover {
     transform: translateX(10px);
