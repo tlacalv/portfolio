@@ -9905,33 +9905,12 @@ h3 {
   color: #e9ecef;
 }
 
-body {
-  background: #111;
-  color: white;
-}
-
-.cont-image-project {
-  padding-left: 0;
-  padding-right: 0;
-}
-
 #nav {
   transition: 0.5s;
   position: absolute;
   top: 0;
   left: 0;
   right: 0;
-}
-
-.hero {
-  padding-top: 160px;
-  background-image: url("../images/hero-bg-blur.jpg");
-  background-size: cover;
-  background-position: center;
-}
-
-.hero-message {
-  margin: 30px auto !important;
 }
 
 .sticky {
@@ -9943,6 +9922,36 @@ body {
   left: 50px;
   z-index: 2;
   right: 50px;
+  animation-name: nav-pop;
+  animation-duration: 0.6s;
+}
+
+.sticky-link {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.sticky + .container {
+  padding-top: 80px;
+}
+
+@keyframes nav-pop {
+  from {
+    top: -50px;
+  }
+  to {
+    top: 0;
+  }
+}
+.hero {
+  padding-top: 160px;
+  background-image: url("../images/hero-bg-blur.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.hero-message {
+  margin: 30px auto !important;
 }
 
 .toast-header {
@@ -9965,19 +9974,19 @@ body {
   margin-right: 5px;
 }
 
-.sticky-link {
-  padding-top: 0;
-  padding-bottom: 0;
-}
-
-.sticky + .container {
-  padding-top: 80px;
-}
-
 @media screen and (max-width: 768px) {
   .nav-link-animation:hover {
     transform: translateX(10px);
   }
+}
+body {
+  background: #111;
+  color: white;
+}
+
+.cont-image-project {
+  padding-left: 0;
+  padding-right: 0;
 }
 
 /*# sourceMappingURL=styles.css.map */

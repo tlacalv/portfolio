@@ -1,0 +1,41 @@
+.nav-link-animation {
+    transition: .7s;
+}
+.nav-link-animation:hover {
+    transform: scale(1.2) translateY(-5px);
+}
+.navbar-dark .navbar-nav .nav-link {
+    color: $gray-200;
+}
+
+#nav {
+    transition: .5s;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+.sticky {
+    color: white;
+    position: fixed !important;
+    background: rgba($color: $gray-900, $alpha: .99);
+    border-bottom: 1px solid $gray-800;
+    top: 0;
+    left: 50px;
+    z-index: 2;
+    right: 50px;
+    animation-name: nav-pop;
+    animation-duration: .6s;
+}
+.sticky-link {
+    padding-top: 0;
+    padding-bottom: 0;
+}
+.sticky + .container {
+    padding-top: 80px;
+}
+@keyframes nav-pop {
+    from {top: -50px;}
+    to {top:0;}
+  }
