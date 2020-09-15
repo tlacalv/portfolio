@@ -10013,6 +10013,10 @@ h3 {
   border-color: #343a40;
 }
 
+#aboutText, #aboutImage {
+  opacity: 0;
+}
+
 .card {
   border-radius: 0;
   overflow: hidden;

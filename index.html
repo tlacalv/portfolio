@@ -43,12 +43,12 @@
     
     <div class="container">
         <div class="row">
-          <div class="col-md-8 d-flex justify-content-center flex-column">
+          <div class="col-md-8 d-flex justify-content-center flex-column" id="aboutText">
             <h2 class="text-primary">Hi, my name is Tlacaelel Leon Villaseñor, I’m a web developer</h2>
             <p>Focused in web development, I know both front-end and back-end, I specialize in JavaScript with several frameworks. I have thrive for constant learning and I love making things from scratch, together we can build something powerful and exciting.</p>
           </div>
-          <div class="col-md-4">
-            <div class="portrait-container">
+          <div class="col-md-4" id="aboutImage">
+            <div class="portrait-container" >
               <img src="images/portrait.jpg" class="img-fluid portrait" alt="portrait">
 
             </div>
@@ -190,9 +190,10 @@
       let nav = document.getElementById('nav')
       let navLinks = document.getElementsByClassName('nav-link');
       let container = nav.children[0];
-      console.log(navLinks);
+      
       
       window.onscroll= (e) => {
+
         setTimeout(() => {
           
           if(window.pageYOffset > nav.offsetTop) {
@@ -210,6 +211,76 @@
           }
         }, 300);
       } 
+      //animation
+      //keyframes 
+      let keyframes = (id) =>{
+            let options ={
+              aboutText: [
+              {
+                transform: 'translateX(-200px)',
+                opacity:0
+                },
+                //to
+                {
+                    transform: 'translateX(0)',
+                    opacity: 1
+                    
+                }
+              ],
+              aboutImage: [
+              {
+                transform: 'translateX(200px)',
+                opacity:0
+                },
+                //to
+                {
+                    transform: 'translateX(0)',
+                    opacity: 1
+                    
+                }
+              ]
+          }
+          return options[id];
+      }
+      const DURATION = 500, DELAY = 300, EASING ='ease-out';
+      const aboutText = document.getElementById('aboutText');
+
+        const aboutImage = document.getElementById('aboutImage');
+        const animation = (target, direction, keyframes) => target.animate(keyframes,
+        {
+          duration: DURATION,
+          delay: DELAY,
+          direction: direction,
+          easing: EASING,
+          iterations: 1,
+          fill: 'forwards'
+        })
+        let options = {
+          root: null,
+          rootMargin: '0px',
+          threshold: .5
+        }
+        let observer = new IntersectionObserver(
+          (entries, observer)=>{
+            entries.forEach(entry => {
+              console.log(entry.target.offsetTop)
+              if(window.pageYOffset < entry.target.offsetTop && entry.isIntersecting) {
+                console.log("showing ", entry.target)
+                
+                animation(entry.target, 'normal', keyframes(entry.target.id));
+              }
+              if(window.pageYOffset < entry.target.offsetTop && !entry.isIntersecting && window.pageYOffset !== 0) {
+                
+                animation(entry.target, 'reverse', keyframes(entry.target.id));
+              }
+              
+            });
+            },
+          options
+        );
+        observer.observe(aboutText);
+        observer.observe(aboutImage);
+        
     </script>
   </body>
 </html>
