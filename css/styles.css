@@ -9944,6 +9944,7 @@ h3 {
 .sticky-link {
   padding-top: 0;
   padding-bottom: 0;
+  margin: auto;
 }
 
 .sticky + .container {
@@ -10062,6 +10063,11 @@ h3 {
 @media screen and (max-width: 768px) {
   .nav-link-animation:hover {
     transform: translateX(10px);
+  }
+
+  .sticky-link {
+    font-size: 1.2em;
+    padding: 0.6em 0;
   }
 }
 body {
