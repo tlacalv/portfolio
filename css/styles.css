@@ -1,4 +1,8 @@
 @charset "UTF-8";
+@font-face {
+  font-family: "kufam";
+  src: url("../fonts/Kufam.ttf");
+}
 /*!
  * Bootstrap v4.5.2 (https://getbootstrap.com/)
  * Copyright 2011-2020 The Bootstrap Authors
@@ -9895,6 +9899,17 @@ h3 {
 }
 .nav-link-animation {
   transition: 0.3s;
+}
+
+.navbar-brand {
+  font-family: "Kufam";
+  position: relative;
+}
+.navbar-brand .box {
+  position: absolute;
+  color: #adb5bd;
+  bottom: 10px;
+  right: -30px;
 }
 
 .nav-link-animation:hover {

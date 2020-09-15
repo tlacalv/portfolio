@@ -1,3 +1,7 @@
+@font-face {
+    font-family: 'kufam';
+    src: url('../fonts/Kufam.ttf');
+  }
 $primary: #e34f99;
 @import "../node_modules/bootstrap/scss/bootstrap.scss";
 @import "nav.scss";
