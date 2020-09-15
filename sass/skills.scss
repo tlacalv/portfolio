@@ -1,5 +1,7 @@
 .card {
     border-radius: 0 ;
+    overflow: hidden;
+    border-radius: $border-radius-lg*2;
     border: 1px solid $gray-700;
     height: 100%;
 }

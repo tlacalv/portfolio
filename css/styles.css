@@ -9999,6 +9999,8 @@ h3 {
 
 .card {
   border-radius: 0;
+  overflow: hidden;
+  border-radius: 0.6rem;
   border: 1px solid #495057;
   height: 100%;
 }
@@ -10023,6 +10025,25 @@ h3 {
   background: #d4e6eb;
 }
 
+.project {
+  margin: 0.6em -15px;
+  background: rgba(227, 79, 153, 0.1);
+  background: #2B303A;
+  background: #102542;
+}
+
+.project-info {
+  padding: 4em 3em;
+}
+
+.cont-image-project {
+  border-right: 0.3em solid black;
+  padding: 5px;
+}
+.cont-image-project img {
+  border-radius: 0.3rem;
+}
+
 @media screen and (max-width: 768px) {
   .nav-link-animation:hover {
     transform: translateX(10px);
@@ -10031,11 +10052,6 @@ h3 {
 body {
   background: #111;
   color: white;
-}
-
-.cont-image-project {
-  padding-left: 0;
-  padding-right: 0;
 }
 
 /*# sourceMappingURL=styles.css.map */

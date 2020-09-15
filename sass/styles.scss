@@ -4,14 +4,11 @@ $primary: #e34f99;
 @import "hero.scss";
 @import "about.scss";
 @import "skills.scss";
+@import "projects.scss";
 @import "mediaqueries.scss";
 body {
     background: #111;
     color: white;
-}
-.cont-image-project {
-    padding-left: 0;
-    padding-right: 0;
 }
 
 
