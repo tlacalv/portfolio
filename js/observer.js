@@ -5,7 +5,7 @@ const observer = (customOptions= {}) => {
     let options = {
         root: customOptions.root? customOptions.root : null,
         rootMargin: '0px',
-        threshold: customOptions.threshold? customOptions.threshold : .5
+        threshold: customOptions.threshold? customOptions.threshold : .3
     }
     return new IntersectionObserver(
         (entries, observer)=>{

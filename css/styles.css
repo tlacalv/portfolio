@@ -10078,6 +10078,14 @@ h3 {
   background: #d4e6eb;
 }
 
+#skill1, #skill2, #skill3, #skill4, #skill5, #skill6 {
+  opacity: 0;
+}
+
+.row {
+  overflow: hidden;
+}
+
 .project {
   margin: 0.6em -15px;
   background: rgba(227, 79, 153, 0.1);

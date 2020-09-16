@@ -1,7 +1,7 @@
 const animation = (target, keyframes, options ={}) => {
     const 
             DIRECTION = options.direction? options.direction : 'normal',
-            DURATION = options.duration? options.duration : 500, 
+            DURATION = options.duration? options.duration : 600, 
             DELAY = options.delay? options.delay : 300, 
             EASING = options.easing? options.easing : 'ease-out';
 
