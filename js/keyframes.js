@@ -39,6 +39,17 @@ let keyframes = (id) =>{
         opacity:1
       }
     ]
+    let project = [
+      {
+        transform: 'translateY(-50px)',
+        opacity:0
+    },
+    {
+        transform: 'translateY(0)',
+        opacity: 1
+        
+    }
+    ]
     let options ={
       aboutText: [
         {
@@ -69,6 +80,9 @@ let keyframes = (id) =>{
       skill4: skill2,
       skill5: skill2,
       skill6: skill2,
+      project1: project,
+      project2: project,
+      project3: project,
   }
   return options[id];
 }

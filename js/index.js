@@ -20,6 +20,9 @@ let skill3 = document.querySelector('#skill3');
 let skill4 = document.querySelector('#skill4');
 let skill5 = document.querySelector('#skill5');
 let skill6 = document.querySelector('#skill6');
+let project1 = document.querySelector('#project1');
+let project2 = document.querySelector('#project2');
+let project3 = document.querySelector('#project3');
 let container = nav.children[0];
 //addEvent to window
 window.onscroll = navTransition(nav, container, navLinks);
@@ -35,3 +38,6 @@ mainObserver.observe(skill3);
 mainObserver.observe(skill4);
 mainObserver.observe(skill5);
 mainObserver.observe(skill6);
+mainObserver.observe(project1);
+mainObserver.observe(project2);
+mainObserver.observe(project3);
