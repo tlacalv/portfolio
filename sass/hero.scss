@@ -3,6 +3,7 @@
     background-image: url('../images/hero-bg-blur.jpg');
     background-size: cover;
     background-position: center;
+    height: 100vh;
 }
 .hero-message{
     margin: 30px auto !important;
@@ -13,10 +14,25 @@
 }
 .toast-body {
     background: $gray-900;
+    padding-bottom: 100px;
 }
 .toast {
     box-shadow: 10px 10px 10px rgba($color: #000000, $alpha: .7);
     border: none;
+    max-width: 600px;
+    p {
+        margin-bottom: .3em;
+    }
+    .cursor {
+        width: 6px;
+        height: 20px;
+        background: $primary;
+        display: inline-block;
+        animation-name: cursor-blink;
+        animation-duration: 1.5s;
+        animation-iteration-count: infinite;
+        animation-timing-function: linear;
+    }
 }
 .hero-ico {
     height: 20px;
@@ -24,3 +40,11 @@
     border-radius: 50%;
     margin-right:5px;
 }
+
+@keyframes cursor-blink {
+    0% {opacity: 0;}
+    49% {opacity: 0;}
+    50% {opacity: 1;}
+    99% {opacity: 1;}
+    100% {opacity: 0;}
+  }
