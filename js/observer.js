@@ -5,18 +5,15 @@ const observer = (customOptions= {}) => {
     let options = {
         root: customOptions.root? customOptions.root : null,
         rootMargin: '0px',
-        threshold: customOptions.threshold? customOptions.threshold : .3
+        threshold: customOptions.threshold? customOptions.threshold : .4
     }
     return new IntersectionObserver(
         (entries, observer)=>{
         entries.forEach(entry => {
-            console.log(entry.target.offsetTop)
-            if(window.pageYOffset < entry.target.offsetTop && entry.isIntersecting) {
-                //show
+            if(entry.boundingClientRect.y >0 && entry.isIntersecting) {
                 animation(entry.target, keyframes(entry.target.id));
             }
-            if(window.pageYOffset < entry.target.offsetTop && !entry.isIntersecting && window.pageYOffset !== 0) {
-                //hide
+            if((entry.rootBounds.width/entry.boundingClientRect.y)>.6 && !entry.isIntersecting) {
                 animation(entry.target, keyframes(entry.target.id), {direction: 'reverse'});
             }
             
