@@ -10046,7 +10046,7 @@ h3 {
   border-color: #343a40;
 }
 
-#aboutText, #aboutImage {
+#aboutText, #aboutImage, #contactTitle, #contactButton {
   opacity: 0;
 }
 
