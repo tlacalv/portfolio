@@ -10091,6 +10091,7 @@ h3 {
   background: rgba(227, 79, 153, 0.1);
   background: #2B303A;
   background: #102542;
+  opacity: 0;
 }
 
 .project-info {
@@ -10118,6 +10119,10 @@ h3 {
 body {
   background: #111;
   color: white;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 /*# sourceMappingURL=styles.css.map */
