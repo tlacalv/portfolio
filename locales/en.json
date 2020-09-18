@@ -1,0 +1,44 @@
+{
+    "lang": "Español",
+    "langHref": "/",
+    "menu" : {
+        "about": "About",
+        "skills": "Skills",
+        "projects": "Projects"
+    },
+    "hero":  {
+        "webDev": "Web developer",
+        "title": "Hi there!",
+        "message" : "Hi, I'm Tlacaelel and this is my portfolio."
+    },
+    "about": {
+        "title": "Hi, my name is Tlacaelel Leon Villaseñor, I’m a web developer",
+        "paragraph": "Focused in web development, I know both front-end and back-end, I specialize in JavaScript with several frameworks. I constantly search for learning and I love making things from scratch, together we can build something powerful and exciting.",
+        "contact": "Contact me"
+    },
+    "skills": {
+        "title": "Skills",
+        "frontTitle": "Front-end",
+        "frontText": "With knowledge in all the front-end technologies, to build static sites, powerful SPA, and translate any design into code. With fluent usage of CSS and HTML",
+        "backTitle": "Back-ennd",
+        "backText": "I create useful back-end applications, with the usage and integration of the most popular technologies like PHP, Node.js, and connection with databases.",
+        "jsTitle": "JavaScript",
+        "jsText": "I'm a full-stack developer with JavaScript from the browser to the server with Node.js, I know several frameworks and do a lot of amazing things with JavaScript.",
+        "vueTitle": "Vue.js",
+        "vueText": "I use Vue.js to build powerful SPA which consumes from an API to give full functionality, and I use Nuxt.js to create beautiful and useful server-side applications.",
+        "expressTitle": "Expres.js",
+        "expressText" : "I know how to build server-side projects with Express.js and to build functional APIs, I implement OAuth to authenticate users with social media.",
+        "reactTitle": "React.js",
+        "reactText": "I have prior experience with React.js I've built a full-stack application with it, that use Express.js and consumes from an API made also by me."
+    },
+    "projects": {
+        "title" : "Projects",
+        "button": "Visit",
+        "pdfTitle": "PDF Covering",
+        "pdfDesc": "Its a small application that loads a PDF and renders it in the DOM, making it possible to draw black rectangles in it, this functionality was made to cover personal information in government documents, and to fulfill the federal law of transparency without exposing personal information. It was integrated with a bigger project that manages this flow.",
+        "currTitle" : "Currency converter",
+        "currDesc": "A small app created purely with Vue it consumes a currency API and gets the value of the most important currencies. It was designed in an intuitive manner of use, unlike other small apps that make the same.",
+        "platTitle": "Platzi video",
+        "platDesc": "Its a project developed for learning React.js and implementing a full-stack flow, I built the API with Expres.js, and the front end with react, then implemented SSR to serve the React app from the server."
+    }
+}
