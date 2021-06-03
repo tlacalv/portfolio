@@ -1,0 +1,51 @@
+.navbar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 6rem;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 0.8rem;
+}
+.brand {
+  font-size: 1.5rem;
+  border-radius: 0.2rem;
+  padding: 0.3rem;
+  transition: 0.2s;
+  span {
+    font-family: "Kufam";
+  }
+  &:focus {
+    outline: none;
+    background-color: var(--primary-850);
+  }
+  &:hover {
+    color: var(--primary-400);
+  }
+  svg {
+    color: var(--gray-300);
+  }
+}
+
+.navbarContent {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1.1rem;
+}
+.navLink {
+  color: var(--gray-100);
+  padding: 0.5rem;
+  border-radius: 0.2rem;
+  &:hover {
+    background-color: var(--gray-700);
+    color: var(--gray-100);
+  }
+}
+.navMenu {
+  display: flex;
+  gap: 0.2rem;
+}

@@ -1,0 +1,11 @@
+.hero {
+  padding-top: 160px;
+  background-image: url("/images/hero-bg-blur.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
