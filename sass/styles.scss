@@ -1,3 +1,5 @@
+@forward './animations.scss';
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;600;700&display=swap");
 @font-face {
   font-family: "JetBrainsMono";
   src: url("/fonts/JetBrainsMono-VariableFont_wght.ttf");
@@ -29,6 +31,12 @@
   --primary-850: hsl(330, 73%, 15%);
   --primary-900: hsl(330, 73%, 10%);
 
+  --secondary-500: hsl(174, 40%, 50%);
+  --secondary-600: hsl(174, 40%, 40%);
+  --secondary-700: hsl(174, 40%, 30%);
+  --secondary-800: hsl(174, 40%, 20%);
+  --secondary-900: hsl(174, 40%, 10%);
+
   --yellow: #ffc107;
   --red: #dc3545;
   --green: #28a745;
@@ -38,7 +46,7 @@
 }
 body {
   background: var(--gray-900);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Source Sans Pro", sans-serif;
   color: white;
 }
 
@@ -57,4 +65,15 @@ a {
 }
 html {
   scroll-behavior: smooth;
+}
+.container {
+  max-width: 1000px;
+  margin: 2rem auto;
+}
+hr {
+  height: 0.1rem;
+  border-radius: 10px;
+  opacity: 0.6;
+  background-color: var(--secondary-700);
+  border: none;
 }

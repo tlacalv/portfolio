@@ -3,9 +3,13 @@
   background-image: url("/images/hero-bg-blur.jpg");
   background-size: cover;
   background-position: center;
-  height: 100vh;
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
+}
+.title {
+  font-size: 5rem;
+  font-weight: 600;
 }

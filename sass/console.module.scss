@@ -1,3 +1,4 @@
+@forward './animations.scss';
 .heroMessage {
   margin: 30px;
   border-radius: 0.5rem;
@@ -23,12 +24,13 @@
   padding: 0.75rem;
   flex-grow: 1;
   height: 100%;
+  font-family: "JetBrainsMono", monospace;
   position: relative;
 }
 .heroMessage {
   box-shadow: 10px 10px 10px rgba($color: #000000, $alpha: 0.7);
   border: none;
-  max-width: 600px;
+  max-width: 700px;
   p {
     margin-bottom: 0.3em;
   }
@@ -61,8 +63,8 @@
 .line {
   margin: 0;
   margin-bottom: 0.3rem;
-  font-size: 1.5rem;
-  font-weight: 300;
+  font-size: 1rem;
+  font-weight: 600;
 }
 .name {
   color: var(--green);
@@ -85,26 +87,6 @@
   bottom: 1rem;
   right: 0;
   left: 0;
-}
-@keyframes gradient-cicle {
-  0% {
-    color: #e34f99;
-  }
-  20% {
-    color: #ff6482;
-  }
-  40% {
-    color: #ff856c;
-  }
-  60% {
-    color: #ffab5c;
-  }
-  80% {
-    color: #ffd25b;
-  }
-  100% {
-    color: #f9f871;
-  }
 }
 
 @keyframes cursor-blink {

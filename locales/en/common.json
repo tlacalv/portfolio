@@ -1,7 +1,5 @@
 {
-    "lang": "Español",
-    "htmlLang": "en",
-    "langHref": "/portfolio",
+    "title": "yes",
     "menu" : {
         "about": "About",
         "skills": "Skills",

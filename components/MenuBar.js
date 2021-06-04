@@ -3,7 +3,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faLaptopCode } from "@fortawesome/free-solid-svg-icons";
 import styles from "../sass/menubar.module.scss";
 
-export default function MenuBar() {
+export default function MenuBar({ about, skills, projects, switchLang }) {
   return (
     <nav className={styles.navbar}>
       <div className={styles.navbarContent}>
@@ -15,16 +15,16 @@ export default function MenuBar() {
         <div className={styles.navbarCollapse}>
           <div className={styles.navMenu}>
             <a className={styles.navLink} href="#" id="aboutMenu">
-              menu.about
+              {about}
             </a>
             <a className={styles.navLink} href="#" id="skillsMenu">
-              menu.skills
+              {skills}
             </a>
             <a className={styles.navLink} href="#" id="projectsMenu">
-              menu.projects
+              {projects}
             </a>
             <a className={styles.navLink} href="#">
-              lang
+              {switchLang}
             </a>
           </div>
         </div>

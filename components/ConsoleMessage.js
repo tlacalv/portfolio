@@ -3,29 +3,20 @@ import styles from "../sass/console.module.scss";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
 
-export default function ConsoleMessage() {
+export default function ConsoleMessage({ title, message }) {
   return (
     <div className={styles.heroMessage}>
       <div className={styles.consoleHeader}>
         <div className={`${styles.heroIco} ${styles.red}`}></div>
         <div className={`${styles.heroIco} ${styles.yellow}`}></div>
         <div className={`${styles.heroIco} ${styles.green}`}></div>
-        <strong className={styles.consoleTitle}>hero.title</strong>
+        <strong className={styles.consoleTitle}>{title}</strong>
       </div>
       <div className={styles.consoleBody}>
         <p className={styles.line}>
           <span className={styles.name}>tlacaelel:~$ </span>{" "}
-          <span data-t>hero.message</span>
+          <span>{message}</span>
         </p>
-        {/* <p className={styles.line}>
-          <span className={styles.name}>tlacaelel:~$ </span>
-          <a className={styles.link} href="">
-            <FontAwesomeIcon icon={faGithub} />
-          </a>
-          <a className={styles.link} href="">
-            <FontAwesomeIcon icon={faLinkedin} />
-          </a>
-        </p> */}
         <p className={styles.line}>
           <span className={styles.name}>tlacaelel:~$ </span>
           <span className={styles.cursor}></span>
