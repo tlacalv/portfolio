@@ -8,6 +8,13 @@
   justify-content: center;
   align-items: flex-start;
   padding: 0.8rem;
+  opacity: 0;
+  transform: scale(0);
+  animation-name: menuTop;
+  animation-duration: 0.3s;
+  animation-timing-function: ease-out;
+  animation-fill-mode: forwards;
+  // transition: 0.3s;
 }
 .brand {
   font-size: 1.5rem;
@@ -35,6 +42,7 @@
   justify-content: center;
   align-items: center;
   gap: 1.1rem;
+  transition: 0.3s;
 }
 .navLink {
   color: var(--gray-100);
@@ -48,4 +56,33 @@
 .navMenu {
   display: flex;
   gap: 0.2rem;
+}
+
+.smallNav {
+  background-color: var(--gray-800);
+  width: fit-content;
+  border-radius: 0 0 0.5rem 0.5rem;
+  margin: auto;
+  height: auto;
+  opacity: 1;
+  transform: scale(1);
+  animation-name: menuDrop;
+  animation-duration: 0.3s;
+  animation-timing-function: ease-out;
+  animation-fill-mode: forwards;
+  transform: translateY(-100px);
+  .navbarContent {
+    flex-direction: row;
+  }
+}
+@keyframes menuDrop {
+  to {
+    transform: translateY(0);
+  }
+}
+@keyframes menuTop {
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
 }

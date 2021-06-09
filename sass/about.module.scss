@@ -10,6 +10,15 @@
     font-weight: 300;
   }
 }
+.about {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 95%;
+  margin: auto;
+  scroll-snap-align: start;
+}
 .contactTitle {
   font-size: 2rem;
   text-align: center;

@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import MenuBar from "../components/MenuBar";
 import Hero from "../components/Hero";
 import About from "../components/About";
@@ -37,15 +37,19 @@ export async function getStaticProps({ locale, locales }) {
   };
 }
 export default function Home(props) {
+  const [scroll, setScroll] = useState(0);
+
   return (
     <>
       <Head>
         <title>Web developer Tlacaelel Leon</title>
       </Head>
       {props.locale}
-      <MenuBar {...props.menubar} />
-      <Hero {...props.hero} />
-      <About {...props.about} />
+      <div onScroll={(e) => setScroll(e.target.scrollTop)} id="content">
+        <MenuBar {...props.menubar} scroll={scroll} />
+        <Hero {...props.hero} />
+        <About {...props.about} />
+      </div>
     </>
   );
 }

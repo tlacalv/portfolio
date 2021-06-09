@@ -5,7 +5,7 @@ import ConsoleMessage from "./ConsoleMessage";
 export default function Hero({ webDev, title, message }) {
   return (
     <div class={styles.hero}>
-      <h1 className={styles.title}>{webDev}</h1>
+      <h1 className={styles.title}>{webDev}_</h1>
       <ConsoleMessage title={title} message={message} />
     </div>
   );
