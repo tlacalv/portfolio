@@ -1,6 +1,7 @@
-import React from "react";
+import React, { useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faLaptopCode } from "@fortawesome/free-solid-svg-icons";
+import { useScrollPosition } from "@n8tb1t/use-scroll-position";
 import styles from "../sass/menubar.module.scss";
 
 export default function MenuBar({
@@ -8,10 +9,26 @@ export default function MenuBar({
   skills,
   projects,
   switchLang,
-  scroll,
+  switchBtn,
 }) {
+  const [show, setShow] = useState(false);
+
+  useScrollPosition(
+    ({ prevPos, currPos }) => {
+      if (currPos.y < -100) {
+        setShow(true);
+      } else {
+        setShow(false);
+      }
+    },
+    [show],
+    document.window,
+    false,
+    500
+  );
+
   return (
-    <nav className={`${styles.navbar} ${scroll > 0 ? styles.smallNav : ""}`}>
+    <nav className={`${styles.navbar} ${show ? styles.smallNav : ""}`}>
       <div className={styles.navbarContent}>
         <a href="/" className={styles.brand}>
           <span>Tlacaelel </span>
@@ -29,7 +46,7 @@ export default function MenuBar({
             <a className={styles.navLink} href="#" id="projectsMenu">
               {projects}
             </a>
-            <a className={styles.navLink} href="#">
+            <a className={styles.navLink} href={`/${switchBtn[0]}`}>
               {switchLang}
             </a>
           </div>

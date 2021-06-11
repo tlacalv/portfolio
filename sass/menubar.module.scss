@@ -59,6 +59,8 @@
 }
 
 .smallNav {
+  position: fixed;
+  z-index: 3;
   background-color: var(--gray-800);
   width: fit-content;
   border-radius: 0 0 0.5rem 0.5rem;

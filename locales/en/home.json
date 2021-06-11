@@ -24,14 +24,30 @@
     "reactTitle": "React.js",
     "reactText": "I have prior experience with React.js I've built a full-stack application with it, that uses Express.js and consumes from an API made also by me."
   },
-  "projects-space": {
-    "title": "Projects",
-    "button": "Visit",
-    "pdfTitle": "PDF Covering",
-    "pdfDesc": "I'ts a small application that loads a PDF and renders it in the DOM, making it possible to draw black rectangles in it, this functionality was made to cover personal information in government documents, and to fulfill the federal law of transparency without exposing personal information. It was integrated with a bigger project that manages this flow.",
-    "currTitle": "Currency converter",
-    "currDesc": "A small app created purely with Vue it consumes a currency API and gets the value of the most important currencies. It was designed in an intuitive manner of use, unlike other small apps that make the same.",
-    "platTitle": "Platzi video",
-    "platDesc": "I'ts a project developed for learning React.js and implementing a full-stack flow, I built the API with Express.js, and the front end with react, then implemented SSR to serve the React app from the server."
-  }
+  "projectTitle": "Projects",
+  "projectVisit": "Visit",
+  "projectCode" : "Code",
+  "projectsList": [
+    {
+      "title": "Nutrition cooking",
+      "images":["/images/nutrition.png"],
+      "desc": "This is an app designed to manage recipes and their caloric and nutrition content, it allows to add ingredients and assemble recipes, using that information to generate the nutrition information of each recipe.\nMade it full-stack, from the database made in mongo and deployed in Atlas to the API with Express.js implementing JWT to authenticate, to the frontend with React.js and Next.js.",
+      "live":"https://nutrition-cooking-app-94q4at7zf-radeon777.vercel.app/",
+      "source": "https://github.com/tlacalv/nutrition-cooking-app"
+    },
+    {
+      "title": "PDF Covering",
+      "desc": "I'ts a small application that loads a PDF and renders it in the DOM, making it possible to draw black rectangles in it, this functionality was made to cover personal information in government documents, and to fulfill the federal law of transparency without exposing personal information. It was integrated with a bigger project that manages this flow.",
+      "images":["/images/pdf1.png","/images/pdf2.png"],
+      "live":"https://tlacalv.github.io/pdf-covering/",
+      "source": "https://github.com/tlacalv/pdf-covering"
+    },
+    {
+      "title": "Currency converter",
+      "images":["/images/currency.png"],
+      "desc": "A small app created purely with Vue it consumes a currency API and gets the value of the most important currencies. It was designed in an intuitive manner of use, unlike other small apps that make the same.",
+      "live":"https://tlacalv.github.io/currency-converter/",
+      "source": "https://github.com/tlacalv/currency-converter"
+    }
+  ]
 }

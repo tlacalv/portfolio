@@ -1,7 +1,8 @@
-import React, { useState } from "react";
+import React from "react";
 import MenuBar from "../components/MenuBar";
 import Hero from "../components/Hero";
 import About from "../components/About";
+import Projects from "../components/Projects";
 import getT from "next-translate/getT";
 import Head from "next/head";
 
@@ -16,6 +17,7 @@ export async function getStaticProps({ locale, locales }) {
     skills: t("skills"),
     projects: t("projects"),
     switchLang,
+    switchBtn: switchBtn[0] === "en" ? [""] : switchBtn,
   };
   const hero = {
     webDev: t("webDev"),
@@ -28,28 +30,33 @@ export async function getStaticProps({ locale, locales }) {
     contact: t("contactAbout"),
     subject: t("subjectAbout"),
   };
+
+  const projects = {
+    title: t("projectTitle"),
+    projectsList: t("projectsList", { count: 1 }, { returnObjects: true }),
+    projectVisit: t("projectVisit"),
+    projectCode: t("projectCode"),
+  };
   return {
     props: {
       menubar,
       hero,
       about,
+      projects,
     },
   };
 }
 export default function Home(props) {
-  const [scroll, setScroll] = useState(0);
-
   return (
     <>
       <Head>
         <title>Web developer Tlacaelel Leon</title>
       </Head>
       {props.locale}
-      <div onScroll={(e) => setScroll(e.target.scrollTop)} id="content">
-        <MenuBar {...props.menubar} scroll={scroll} />
-        <Hero {...props.hero} />
-        <About {...props.about} />
-      </div>
+      <MenuBar {...props.menubar} />
+      <Hero {...props.hero} />
+      <About {...props.about} />
+      <Projects {...props.projects} />
     </>
   );
 }
