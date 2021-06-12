@@ -30,7 +30,7 @@
   "projectsList": [
     {
       "title": "Nutrition cooking",
-      "images":["/images/nutrition.png"],
+      "images":["/images/nutrition1.png","/images/nutrition2.png","/images/nutrition3.png","/images/nutrition4.png"],
       "desc": "This is an app designed to manage recipes and their caloric and nutrition content, it allows to add ingredients and assemble recipes, using that information to generate the nutrition information of each recipe.\nMade it full-stack, from the database made in mongo and deployed in Atlas to the API with Express.js implementing JWT to authenticate, to the frontend with React.js and Next.js.",
       "live":"https://nutrition-cooking-app-94q4at7zf-radeon777.vercel.app/",
       "source": "https://github.com/tlacalv/nutrition-cooking-app"

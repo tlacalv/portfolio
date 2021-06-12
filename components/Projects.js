@@ -10,14 +10,16 @@ export default function Projects({
 }) {
   return (
     <div id="projects" className={styles.projects}>
-      <h2 className={styles.title}>{title}</h2>
-      {projectsList.map((project) => (
-        <Project
-          {...project}
-          projectVisit={projectVisit}
-          projectCode={projectCode}
-        />
-      ))}
+      <div className="container">
+        <h2 className={styles.title}>{title}</h2>
+        {projectsList.map((project) => (
+          <Project
+            {...project}
+            projectVisit={projectVisit}
+            projectCode={projectCode}
+          />
+        ))}
+      </div>
     </div>
   );
 }

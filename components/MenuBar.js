@@ -22,7 +22,7 @@ export default function MenuBar({
       }
     },
     [show],
-    document.window,
+    undefined,
     false,
     500
   );

@@ -11,7 +11,7 @@ export default function About({ title, paragraph, contact, subject }) {
         <div className="container">
           <div className={styles.info}>
             <h2>{title}</h2>
-            <p>{paragraph}</p>
+            <p className="paragraph">{paragraph}</p>
           </div>
           <hr />
           <h3 className={styles.contactTitle}>{contact}</h3>
