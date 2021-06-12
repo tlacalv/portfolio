@@ -40,11 +40,11 @@ export default function MenuBar({
             <a className={styles.navLink} href="#about" id="aboutMenu">
               {about}
             </a>
-            <a className={styles.navLink} href="#" id="skillsMenu">
-              {skills}
-            </a>
-            <a className={styles.navLink} href="#" id="projectsMenu">
+            <a className={styles.navLink} href="#projects" id="projectsMenu">
               {projects}
+            </a>
+            <a className={styles.navLink} href="#skills" id="skillsMenu">
+              {skills}
             </a>
             <a className={styles.navLink} href={`/${switchBtn[0]}`}>
               {switchLang}
