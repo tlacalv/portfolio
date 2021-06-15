@@ -3,6 +3,7 @@ import MenuBar from "../components/MenuBar";
 import Hero from "../components/Hero";
 import About from "../components/About";
 import Projects from "../components/Projects";
+import Skills from "../components/Skills";
 import getT from "next-translate/getT";
 import Head from "next/head";
 
@@ -37,12 +38,17 @@ export async function getStaticProps({ locale, locales }) {
     projectVisit: t("projectVisit"),
     projectCode: t("projectCode"),
   };
+  const skills = {
+    title: t("skillsTitle"),
+    skillsList: t("skillsList", { count: 1 }, { returnObjects: true }),
+  };
   return {
     props: {
       menubar,
       hero,
       about,
       projects,
+      skills,
     },
   };
 }
@@ -57,6 +63,7 @@ export default function Home(props) {
       <Hero {...props.hero} />
       <About {...props.about} />
       <Projects {...props.projects} />
+      <Skills {...props.skills} />
     </>
   );
 }

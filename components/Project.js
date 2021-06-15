@@ -21,8 +21,8 @@ export default function Project({
           isVertical(title) ? styles.vertical : ""
         }`}
       >
-        {images.map((img) => (
-          <div className={styles.image}>
+        {images.map((img, index) => (
+          <div className={styles.image} key={index}>
             <img alt="project image" src={img} />
           </div>
         ))}

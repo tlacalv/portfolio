@@ -12,8 +12,9 @@ export default function Projects({
     <div id="projects" className={styles.projects}>
       <div className="container">
         <h2 className={styles.title}>{title}</h2>
-        {projectsList.map((project) => (
+        {projectsList.map((project, index) => (
           <Project
+            key={index}
             {...project}
             projectVisit={projectVisit}
             projectCode={projectCode}

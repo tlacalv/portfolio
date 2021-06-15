@@ -9,21 +9,49 @@
   "paragraphAbout": "Focused on web development, I know both front-end and back-end, I specialize in JavaScript with several frameworks. I constantly search for learning and I love making things from scratch, together we can build something powerful and exciting.",
   "contactAbout": "Contact me",
   "subjectAbout":"Contact from portfolio",
-  "skills-space": {
-    "title": "Skills",
-    "frontTitle": "Front-end",
-    "frontText": "With knowledge in all the front-end technologies, to build static sites, powerful SPA, and translate any design into code. With fluent usage of CSS and HTML",
-    "backTitle": "Back-ennd",
-    "backText": "I create useful back-end applications, with the usage and integration of the most popular technologies like PHP, Node.js, and connection with databases.",
-    "jsTitle": "JavaScript",
-    "jsText": "I'm a full-stack developer with JavaScript from the browser to the server with Node.js, I know several frameworks and do a lot of amazing things with JavaScript.",
-    "vueTitle": "Vue.js",
-    "vueText": "I use Vue.js to build powerful SPA which consumes from an API to give full functionality, and I use Nuxt.js to create beautiful and useful server-side applications.",
-    "expressTitle": "Expres.js",
-    "expressText": "I know how to build server-side projects with Express.js and to build functional APIs, I implement OAuth to authenticate users with social media.",
-    "reactTitle": "React.js",
-    "reactText": "I have prior experience with React.js I've built a full-stack application with it, that uses Express.js and consumes from an API made also by me."
-  },
+  "skillsTitle": "Skills",
+  "skillsList": [
+    {
+      "title": "Javascript",
+      "color": "#f7df1e"
+    },
+    {
+      "title": "HTML",
+      "color": "#fc490b"
+    },
+    {
+      "title": "CSS",
+      "color": "#2299f8"
+    },
+    {
+      "title": "SASS",
+      "color": "#cd6799"
+    },
+    {
+      "title": "React.js",
+      "color": "#09d9fe"
+    },
+    {
+      "title": "Vue.js",
+      "color": "#00cb87"
+    },
+    {
+      "title": "Node.js",
+      "color": "#04b24a"
+    },
+    {
+      "title": "Expres.js",
+      "color": "#04b24a"
+    },
+    {
+      "title": "MongoDB",
+      "color": "#49ad3d"
+    },
+    {
+      "title": "MySQL",
+      "color": "#12548a"
+    }
+  ],
   "projectTitle": "Projects",
   "projectVisit": "Visit",
   "projectCode" : "Code",
