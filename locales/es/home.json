@@ -1,38 +1,81 @@
 {
-  "about": "About",
-  "skills": "Skills",
-  "projects": "Projects",
-  "webDev": "Web developer",
-  "title": "Hi there!",
-  "message": "Hi, I'm Tlacaelel and this is my portfolio.",
-  "about-space": {
-    "title": "Hi, my name is Tlacaelel Leon Villaseñor, I’m a web developer",
-    "paragraph": "Focused on web development, I know both front-end and back-end, I specialize in JavaScript with several frameworks. I constantly search for learning and I love making things from scratch, together we can build something powerful and exciting.",
-    "contact": "Contact me"
-  },
-  "skills": {
-    "title": "Skills",
-    "frontTitle": "Front-end",
-    "frontText": "With knowledge in all the front-end technologies, to build static sites, powerful SPA, and translate any design into code. With fluent usage of CSS and HTML",
-    "backTitle": "Back-ennd",
-    "backText": "I create useful back-end applications, with the usage and integration of the most popular technologies like PHP, Node.js, and connection with databases.",
-    "jsTitle": "JavaScript",
-    "jsText": "I'm a full-stack developer with JavaScript from the browser to the server with Node.js, I know several frameworks and do a lot of amazing things with JavaScript.",
-    "vueTitle": "Vue.js",
-    "vueText": "I use Vue.js to build powerful SPA which consumes from an API to give full functionality, and I use Nuxt.js to create beautiful and useful server-side applications.",
-    "expressTitle": "Expres.js",
-    "expressText": "I know how to build server-side projects with Express.js and to build functional APIs, I implement OAuth to authenticate users with social media.",
-    "reactTitle": "React.js",
-    "reactText": "I have prior experience with React.js I've built a full-stack application with it, that uses Express.js and consumes from an API made also by me."
-  },
-  "projects": {
-    "title": "Projects",
-    "button": "Visit",
-    "pdfTitle": "PDF Covering",
-    "pdfDesc": "I'ts a small application that loads a PDF and renders it in the DOM, making it possible to draw black rectangles in it, this functionality was made to cover personal information in government documents, and to fulfill the federal law of transparency without exposing personal information. It was integrated with a bigger project that manages this flow.",
-    "currTitle": "Currency converter",
-    "currDesc": "A small app created purely with Vue it consumes a currency API and gets the value of the most important currencies. It was designed in an intuitive manner of use, unlike other small apps that make the same.",
-    "platTitle": "Platzi video",
-    "platDesc": "I'ts a project developed for learning React.js and implementing a full-stack flow, I built the API with Express.js, and the front end with react, then implemented SSR to serve the React app from the server."
-  }
+  "about": "Acerca de mi",
+  "skills": "Habilidades",
+  "projects": "Proyectos",
+  "webDev": "Desarrollador web",
+  "title": "Hola!",
+  "message": "Hola, soy Tlacaelel y este es mi portafolio.",
+  "titleAbout": "Hola, me llamo Tlacaelel Leon Villaseñor, soy desarrollador web",
+  "paragraphAbout": "Mi enfoque es desarrollo web, se tanto de front-end como de back-end, me especializo en JavaScript y varios frameworks. Me encanta hacer cosas desde cero y aprender como funcionan las cosas. Soy bueno construyendo SPA, y API, conozco la estructura de como esta hecha la web desde el servidor con HTTP hasta el navegador.",
+  "contactAbout": "Contactame",
+  "subjectAbout":"Contact from portfolio",
+  "skillsTitle": "Skills",
+  "skillsList": [
+    {
+      "title": "Javascript",
+      "color": "#f7df1e"
+    },
+    {
+      "title": "HTML",
+      "color": "#fc490b"
+    },
+    {
+      "title": "CSS",
+      "color": "#2299f8"
+    },
+    {
+      "title": "SASS",
+      "color": "#cd6799"
+    },
+    {
+      "title": "React.js",
+      "color": "#09d9fe"
+    },
+    {
+      "title": "Vue.js",
+      "color": "#00cb87"
+    },
+    {
+      "title": "Node.js",
+      "color": "#04b24a"
+    },
+    {
+      "title": "Expres.js",
+      "color": "#04b24a"
+    },
+    {
+      "title": "MongoDB",
+      "color": "#49ad3d"
+    },
+    {
+      "title": "MySQL",
+      "color": "#12548a"
+    }
+  ],
+  "projectTitle": "Proyectos",
+  "projectVisit": "Visitar",
+  "projectCode" : "Codigo",
+  "projectsList": [
+    {
+      "title": "Nutrition cooking",
+      "images":["/images/nutrition1.png","/images/nutrition2.png","/images/nutrition3.png","/images/nutrition4.png"],
+      "desc": "Esta aplicación esta diseñada para manejar recetas y su contenido calorico y nutricional, permite añadir ingredients y armar recetas, utilizando la informacion guardada para generar la informacion nutricional de cada receta.\nLa hice full-stack, desde la base de datos en mongo desplegada en Atlas al la API con Express.js implementando JWT para autenticar hasta el front end con React.js y Next.js.",
+      "live":"https://nutrition-cooking-app-94q4at7zf-radeon777.vercel.app/",
+      "source": "https://github.com/tlacalv/nutrition-cooking-app"
+    },
+    {
+      "title": "PDF Covering",
+      "desc": "Es una aplicación que carga un PDF y lo renderiza en el DOM, haciendo posible el dibujado de rectangulos negros en el mismo, esta funcionalidad fue hecha para cubrir informacion privada en documentos oficiales de gobierno, y para cumplir la ley federal de transparencia sin exponer informacion personal. Fue integrada en un proyecto mas grande que maneja este flujo.",
+      "images":["/images/pdf1.png","/images/pdf2.png"],
+      "live":"https://tlacalv.github.io/pdf-covering/",
+      "source": "https://github.com/tlacalv/pdf-covering"
+    },
+    {
+      "title": "Conversor de divisas",
+      "images":["/images/currency.png"],
+      "desc": "Es una pequeña aplicación hecha solo con Vue consume una API de divisas y obtiene el valor de las divisas mas importantes. Fue diseñada con una forma de uso intuitiva, a diferencia de otras pequeñas aplicaciones que hacen lo mismo.",
+      "live":"https://tlacalv.github.io/currency-converter/",
+      "source": "https://github.com/tlacalv/currency-converter"
+    }
+  ]
 }

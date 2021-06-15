@@ -27,7 +27,7 @@ export default function Project({
           </div>
         ))}
       </div>
-      <p className="paragraph">{desc}</p>
+      <p className="paragraph" dangerouslySetInnerHTML={{ __html: desc }}></p>
       <div className={styles.buttons}>
         <a className="button" target="_blank" href={live}>
           {projectVisit} <FontAwesomeIcon icon={faGlobe} />

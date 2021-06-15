@@ -6,7 +6,7 @@
   "title": "Hi there!",
   "message": "Hi, I'm Tlacaelel and this is my portfolio.",
   "titleAbout": "Hi, my name is Tlacaelel Leon Villaseñor, I’m a web developer",
-  "paragraphAbout": "Focused on web development, I know both front-end and back-end, I specialize in JavaScript with several frameworks. I constantly search for learning and I love making things from scratch, together we can build something powerful and exciting.",
+  "paragraphAbout": "Focused on web development, I know both front-end and back-end, I specialize in JavaScript with several frameworks. I love making things from scratch and learning about how everything works. I'm skilled in building SPA, and API, I know the structure of how the web is built from the server with HTTP to the browser.",
   "contactAbout": "Contact me",
   "subjectAbout":"Contact from portfolio",
   "skillsTitle": "Skills",
@@ -59,13 +59,13 @@
     {
       "title": "Nutrition cooking",
       "images":["/images/nutrition1.png","/images/nutrition2.png","/images/nutrition3.png","/images/nutrition4.png"],
-      "desc": "This is an app designed to manage recipes and their caloric and nutrition content, it allows to add ingredients and assemble recipes, using that information to generate the nutrition information of each recipe.\nMade it full-stack, from the database made in mongo and deployed in Atlas to the API with Express.js implementing JWT to authenticate, to the frontend with React.js and Next.js.",
+      "desc": "This is an app designed to manage recipes and their caloric and nutrition content, it allows to add ingredients and assemble recipes, using that information to generate the nutrition information of each recipe.<br>Made it full-stack, from the database made in mongo and deployed in Atlas to the API with Express.js implementing JWT to authenticate, to the frontend with React.js and Next.js.",
       "live":"https://nutrition-cooking-app-94q4at7zf-radeon777.vercel.app/",
       "source": "https://github.com/tlacalv/nutrition-cooking-app"
     },
     {
       "title": "PDF Covering",
-      "desc": "I'ts a small application that loads a PDF and renders it in the DOM, making it possible to draw black rectangles in it, this functionality was made to cover personal information in government documents, and to fulfill the federal law of transparency without exposing personal information. It was integrated with a bigger project that manages this flow.",
+      "desc": "I'ts an application that loads a PDF and renders it in the DOM, making it possible to draw black rectangles in it, this functionality was made to cover personal information in government documents, and to fulfill the federal law of transparency without exposing personal information. It was integrated with a bigger project that manages this flow.",
       "images":["/images/pdf1.png","/images/pdf2.png"],
       "live":"https://tlacalv.github.io/pdf-covering/",
       "source": "https://github.com/tlacalv/pdf-covering"
