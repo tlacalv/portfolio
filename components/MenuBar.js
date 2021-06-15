@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faLaptopCode } from "@fortawesome/free-solid-svg-icons";
+import { faLaptopCode, faBars } from "@fortawesome/free-solid-svg-icons";
 import { useScrollPosition } from "@n8tb1t/use-scroll-position";
 import styles from "../sass/menubar.module.scss";
 
@@ -12,6 +12,7 @@ export default function MenuBar({
   switchBtn,
 }) {
   const [show, setShow] = useState(false);
+  const [toggle, setToggle] = useState(false);
 
   useScrollPosition(
     ({ prevPos, currPos }) => {
@@ -34,8 +35,14 @@ export default function MenuBar({
           <span>Tlacaelel </span>
           <FontAwesomeIcon icon={faLaptopCode} />
         </a>
-
-        <div className={styles.navbarCollapse}>
+        <button className={styles.menuBtn} onClick={() => setToggle(!toggle)}>
+          <FontAwesomeIcon icon={faBars} />
+        </button>
+        <div
+          className={`${styles.navbarCollapse} ${
+            toggle ? styles.showMenu : ""
+          }`}
+        >
           <div className={styles.navMenu}>
             <a className={styles.navLink} href="#about" id="aboutMenu">
               {about}

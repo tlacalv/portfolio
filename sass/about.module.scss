@@ -34,3 +34,20 @@
   animation-duration: 2s;
   font-size: 3rem;
 }
+
+@media screen and (max-width: 600px) {
+  .info {
+    h2 {
+      font-size: 2rem;
+    }
+  }
+  .contactTitle {
+    font-size: 1rem;
+  }
+  .buttonGroup {
+    gap: 1rem;
+  }
+  .links {
+    font-size: 1.5rem;
+  }
+}
