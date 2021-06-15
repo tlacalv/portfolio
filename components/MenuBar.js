@@ -46,7 +46,10 @@ export default function MenuBar({
             <a className={styles.navLink} href="#skills" id="skillsMenu">
               {skills}
             </a>
-            <a className={styles.navLink} href={`/${switchBtn[0]}`}>
+            <a
+              className={`${styles.navLink} ${styles.highlight}`}
+              href={`/${switchBtn[0]}`}
+            >
               {switchLang}
             </a>
           </div>

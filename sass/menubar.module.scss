@@ -57,6 +57,13 @@
   display: flex;
   gap: 0.2rem;
 }
+.highlight {
+  font-weight: 600;
+  color: var(--primary-500);
+  &:hover {
+    color: var(--primary-500);
+  }
+}
 
 .smallNav {
   position: fixed;
